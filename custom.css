@@ -1,3 +1,5 @@
+/* adapted from: http://padolsey.github.io/sonic-creator/#pink */
+
 @-webkit-keyframes loaderSprite {
   from { background-position: 0px; } to
   { background-position: -2000px; }
