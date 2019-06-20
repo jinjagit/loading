@@ -1,0 +1,32 @@
+@-webkit-keyframes loaderSprite {
+  from { background-position: 0px; } to
+  { background-position: -2000px; }
+}
+
+@-moz-keyframes loaderSprite {
+    from { background-position: 0px; }
+    to { background-position: -2000px; }
+}
+
+@keyframes loaderSprite {
+  from { background-position: 0px; }
+  to { background-position: -2000px; }
+}
+
+body {
+  background-color: #222222;
+}
+
+.loader {
+  display: block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+  background-image: url("load-sprites.png");
+  -webkit-animation: loaderSprite 1s steps(20, end) infinite;
+  -moz-animation: loaderSprite 1s steps(20, end) infinite;
+  animation: loaderSprite 1s steps(20, end) infinite;
+}
